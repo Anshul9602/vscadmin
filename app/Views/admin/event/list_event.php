@@ -6,14 +6,14 @@
         <div class="row page-titles mx-0">
             <div class="col-sm-6 p-md-0">
                 <div class="welcome-text">
-                    <h4>Manage Blog</h4>
+                    <h4>Manage Events</h4>
                 </div>
             </div>
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                 <button type="button" class="btn btn-rounded btn-primary open-add-form">
                     <span class="btn-icon-left text-primary">
                         <i class="fa fa-plus"></i>
-                    </span>Add New Blog
+                    </span>Add New Event
                 </button>
             </div>
         </div>
@@ -65,7 +65,7 @@
         <div class="col-12 mx-0 mtm-10">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">List of Blog</h4>
+                    <h4 class="card-title">List of Event</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -77,6 +77,7 @@
                                     <th>Name</th>
                                     <th>Content</th>
                                     <th>Date</th>
+                                    <th>Time</th>
                                     <th>Status</th>
                                     <th class="text-center">Action</th>
                                 </tr>
@@ -118,6 +119,7 @@
                                          
 
                                             <td>
+                                          
                                             <?php
                                                 // Assuming $user->created_at is in the format '06-26-2024 09:15 PM'
                                                 $createdAt = DateTime::createFromFormat('Y-m-d', $user->created_at);
@@ -127,7 +129,16 @@
                                                 } else {
                                                     echo "Invalid date format"; // Handle the case where the date cannot be parsed
                                                 }
-                                                ?>      </td>
+                                                ?>     
+                                            </td>
+                                                <td>
+                                                <span>
+                                                    <i class="fa fa-mobile color-muted"></i>
+                                                    <?= $user->time ?>
+                                                  
+                                                   
+                                                </span>
+                                            </td>
                                             <td>
                                                 <div class="switch">
                                                     <input type="checkbox" data-id="<?= $user->id ?>"
@@ -191,7 +202,7 @@
 <!-- Add New Candidate Form -->
 <div class="right-sidebar big" id="addCandidateForm">
     <div class="sliding-form">
-        <?= $this->include('admin/candidates/candidate_form') ?>
+        <?= $this->include('admin/event/event_form') ?>
     </div>
 </div>
 <!-- Overlay -->
@@ -200,7 +211,7 @@
 <!-- Add New Candidate Form -->
 <div class="right-sidebar big" id="userInfo">
     <div class="sliding-form">
-        <?= $this->include('admin/candidates/user_info_slider') ?>
+        <?= $this->include('admin/event/user_info_slider') ?>
     </div>
 </div>
 
@@ -384,14 +395,14 @@
 
     $('.open-edit-form').click(function() {
         var deptId = $(this).data('id');
-        $.get(`<?= base_url('admin/candidates/view/getbyid') ?>/${deptId}`, function(data) {
+        $.get(`<?= base_url('admin/events/view/getbyid') ?>/${deptId}`, function(data) {
 
             var userData = data[0];
 
             console.log(userData);
             // Populate form fields with userData
             $('#user_id').val(userData.user.id);
-            $('#author').val(userData.user.author);
+            $('#time').val(userData.user.time);
             // $('#content').summernote('code', userData.user.content);
             $('#content').val( userData.user.content);
             $('#first_name').val(userData.user.name);
@@ -426,7 +437,7 @@
 
         $.ajax({
             type: 'POST',
-            url: `<?= base_url('/admin/candidates/view/delete') ?>/${deptId}`,
+            url: `<?= base_url('/admin/events/view/delete') ?>/${deptId}`,
             success: function(response) {
                 location.reload();
             }
@@ -438,7 +449,7 @@
 
         $.ajax({
             type: 'POST',
-            url: `<?= base_url('/admin/candidates/view/status_update') ?>/${deptId}`,
+            url: `<?= base_url('/admin/events/view/status_update') ?>/${deptId}`,
             success: function(response) {
                 location.reload(); // Reload the page upon successful AJAX request
             },

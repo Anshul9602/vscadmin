@@ -27,22 +27,15 @@ $routes->group('admin', function($routes) {
   $routes->get('candidates/view/getbyid/(:num)', 'Admin\Candidates\Candidates::listCandidate_getByid/$1');
   $routes->get('candidates/view_app/getbyid/(:num)', 'Admin\Candidates\Candidates::listCandidate_app_getByid/$1');
 
-  // Jobs routes
-  
-  $routes->get('jobs/(:segment)', 'Admin\Jobs\Jobs::listAllJobs/$1');
-  $routes->get('jobs/view/getbyid/(:num)', 'Admin\Jobs\Jobs::listAllJobs_getByid/$1');
-  $routes->post('jobs/view/delete/(:num)', 'Admin\Jobs\Jobs::listJob_delete/$1');
-  $routes->post('jobs/job/save', 'Admin\Jobs\Jobs::listJob_save');
-  $routes->post('jobs/view/status/(:num)', 'Admin\Jobs\Jobs::listJob_status/$1');
-  $routes->post('jobs/view/ap_delete/(:num)', 'Admin\Jobs\Jobs::listJobAP_delete/$1');
-   // Hotels routes
-   $routes->get('hotels/(:segment)', 'Admin\Hotels\Hotels::listAllCandidates/$1');
-   $routes->get('hotels/view/(:num)/(:segment)', 'Admin\Hotels\Hotels::listAllCandidates/$1');
-   $routes->post('hotels/view/delete/(:num)', 'Admin\Hotels\Hotels::listCandidate_delete/$1');
-   $routes->post('hotels/view/save', 'Admin\Hotels\Hotels::listCandidate_save');
-   $routes->post('hotels/view/status_update/(:num)', 'Admin\Hotels\Hotels::listCandidate_status/$1');
-   $routes->get('hotels/view/getbyid/(:num)', 'Admin\Hotels\Hotels::listCandidate_getByid/$1');
-   $routes->get('hotels/view_app/getbyid/(:num)', 'Admin\Hotels\Hotels::listCandidate_app_getByid/$1');
+
+   // Events routes
+   $routes->get('events/(:segment)', 'Admin\Events\Events::listAllEvents/$1');
+   $routes->get('events/view/(:num)/(:segment)', 'Admin\Events\Events::listAllEvents/$1');
+   $routes->post('events/view/delete/(:num)', 'Admin\Events\Events::listEvents_delete/$1');
+   $routes->post('events/view/save', 'Admin\Events\Events::listEvents_save');
+   $routes->post('events/view/status_update/(:num)', 'Admin\Events\Events::listEvents_status/$1');
+   $routes->get('events/view/getbyid/(:num)', 'Admin\Events\Events::listEvents_getByid/$1');
+   $routes->get('events/view_app/getbyid/(:num)', 'Admin\Events\Events::listEvents_app_getByid/$1');
 
 // Agents routes
 $routes->get('agents/(:segment)', 'Admin\Agents\Agents::listAllCandidates/$1');

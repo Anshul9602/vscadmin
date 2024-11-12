@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 use Exception;
 use \Datetime;
 
-class CandidatesModel extends Model
+class EventsModel extends Model
 {
-    protected $table = 'user_blog';
+    protected $table = 'user_events';
 
     protected $allowedFields = [
         'mobile_number',
@@ -50,31 +50,14 @@ class CandidatesModel extends Model
 
 
     /// get user information
-    public function getUserData($userId)
+   
+    public function getEventsData($userId)
     {
 
-        $builder = $this->db->table('user_profiles');
-        $builder->select('user_profiles.*');
+        $builder = $this->db->table('user_events');
+        $builder->select('user_events.*');
 
-        $builder->where('user_profiles.user_id', $userId);
-        $query = $builder->get();
-
-        $user = $query->getResult();
-
-
-        if (!$user) {
-            return null;
-        } else {
-            return $user[0];
-        }
-    }
-    public function getBlogData($userId)
-    {
-
-        $builder = $this->db->table('user_blog');
-        $builder->select('user_blog.*');
-
-        $builder->where('user_blog.id', $userId);
+        $builder->where('user_events.id', $userId);
         $query = $builder->get();
 
         $user = $query->getResult();
@@ -89,8 +72,8 @@ class CandidatesModel extends Model
 
     public function getAllUserData()
     {
-        $builder = $this->db->table('user_blog');
-        $builder->select('user_blog.*');
+        $builder = $this->db->table('user_events');
+        $builder->select('user_events.*');
       
       
         $query = $builder->get();
@@ -108,29 +91,11 @@ class CandidatesModel extends Model
     }
 
 
-    public function getUserCount()
+  
+   
+    public function EventsCount()
     {
-        $builder = $this->db->table('users');
-        $builder->select('COUNT(*) as user_count');
-
-        $query = $builder->get();
-        $result = $query->getRow();
-
-        return $result->user_count;
-    }
-    public function UserCount()
-    {
-        $builder = $this->db->table('user_profiles');
-        $builder->select('COUNT(*) as user_count');
-
-        $query = $builder->get();
-        $result = $query->getRow();
-
-        return $result->user_count;
-    }
-    public function BlogCount()
-    {
-        $builder = $this->db->table('user_blog');
+        $builder = $this->db->table('user_events');
         $builder->select('COUNT(*) as user_count');
 
         $query = $builder->get();
@@ -140,22 +105,8 @@ class CandidatesModel extends Model
     }
 
 
-    public function findUserByUserNumber1(string $mobile_number)
-    {
-        // echo "test";
-        // die();
-        $user = $this
-            ->asArray()
-            ->where(['mobile_number' => $mobile_number])
-            ->first();
-
-        if (!$user) {
-            return 0;
-        } else {
-            return $user;
-        }
-    }
-    public function findBlogByName(string $name)
+    
+    public function findEventsByName(string $name)
     {
         // echo "test";
         // die();
@@ -171,35 +122,7 @@ class CandidatesModel extends Model
         }
     }
 
-    public function findUserByUserNumber(string $mobile_number)
-    {
-
-        $user = $this
-            ->asArray()
-            ->where(['mobile_number' => $mobile_number])
-            ->first();
-
-        if (!$user) {
-            return null;
-        } else {
-            return $user;
-        }
-    }
-    public function findUserByUserName(string $mobile_number)
-    {
-
-        $user = $this
-            ->asArray()
-            ->where(['mobile_number' => $mobile_number])
-            ->first();
-
-        if (!$user) {
-            return null;
-        } else {
-            return $user;
-        }
-    }
-
+  
 
     public function findAll(int $limit = 0, int $offset = 0)
     {
@@ -235,7 +158,7 @@ class CandidatesModel extends Model
 
         return $eventData['data'];
     }
-    public function findBlogById($id)
+    public function findEventsById($id)
     {
         $user = $this
             ->asArray()
@@ -243,41 +166,30 @@ class CandidatesModel extends Model
             ->first();
 
         if (!$user)
-            throw new Exception('User does not exist for specified user id');
+            throw new Exception('Event does not exist for specified id');
 
         return $user;
     }
-    public function findUserById($id)
-    {
-        $user = $this
-            ->asArray()
-            ->where(['id' => $id])
-            ->first();
-
-        if (!$user)
-            throw new Exception('User does not exist for specified user id');
-
-        return $user;
-    }
+   
 
 
 
-
-    public function save_blog($data)
+    public function save_events($data)
     {
         $name = $data['first_name'];
-        $author = $data['author'];
+      
         $meta_title = $data['meta_title'];
         $meta_des = $data['meta_des'];
         $meta_tag = $data['meta_tag'];
         $content = $data['content'];
         $date = $data['date'];
+        $time = $data['time'];
         $status = "Enable";
         // $date = new DateTime();
         // $date = date_default_timezone_set('Asia/Kolkata');
         // $date1 = date("m-d-Y h:i A");
 
-        $sql = "INSERT INTO `user_blog`(`name`,`author`,`meta_title`,`meta_des`,`meta_tag`,`content`, `status`, `created_at`) VALUES ('$name','$author','$meta_title','$meta_des','$meta_tag','$content','$status','$date')";
+        $sql = "INSERT INTO `user_events`(`name`,`meta_title`,`meta_des`,`meta_tag`,`content`,`time`, `status`, `created_at`) VALUES ('$name','$meta_title','$meta_des','$meta_tag','$content','$time','$status','$date')";
         $post = $this->db->query($sql);
 
         if (!$post) {
@@ -288,7 +200,7 @@ class CandidatesModel extends Model
         }
     }
 
-    public function findBlogId(string $name)
+    public function findEventsId(string $name)
     {
 
         $user = $this
@@ -303,12 +215,12 @@ class CandidatesModel extends Model
         }
     }
 
-    public function update_blog($id, $data)
+    public function update_events($id, $data)
     {
         //    echo json_encode($sql);
 
         $name = $data['first_name'];
-        $author = $data['author'];
+        $time = $data['time'];
         $meta_title = $data['meta_title'];
         $meta_des = $data['meta_des'];
         $meta_tag = $data['meta_tag'];
@@ -319,8 +231,8 @@ class CandidatesModel extends Model
         // $date = date_default_timezone_set('Asia/Kolkata');
         // $date1 = date("m-d-Y h:i A");
 
-        $sql = "UPDATE `user_blog` SET author = '$author',       meta_title = '$meta_title',
-        meta_des = '$meta_des',name='$name',meta_tag='$meta_tag',content='$content' 
+        $sql = "UPDATE `user_events` SET time = '$time',       meta_title = '$meta_title',
+        meta_des = '$meta_des',name='$name',meta_tag='$meta_tag',content='$content',created_at ='$date'
         WHERE id = $id";
     
         // echo ( $sql);
@@ -333,34 +245,14 @@ class CandidatesModel extends Model
             return $post;
         }
     }
-    public function update_status_e($id)
-    {
-        //    echo json_encode($sql);
-        $id = $id;
-
-        $date = new DateTime();
-        $date = date_default_timezone_set('Asia/Kolkata');
-        $date1 = date("m-d-Y h:i A");
-
-        $sql = "UPDATE `user_blog` SET `status`='Enable',`created_at`='$date1' WHERE id = $id";
-        // echo json_encode($sql);
-        // echo ( $sql);
-        //     die();
-        $post = $this->db->query($sql);
-
-        if (!$post) {
-            return false;
-        } else {
-            return $post;
-        }
-    }
+  
 
     public function update_status_d($id)
     {
 
 
 
-        $result = $this->findBlogById($id);
+        $result = $this->findEventsById($id);
 
         // print_r($result);
 
@@ -375,7 +267,7 @@ class CandidatesModel extends Model
             $date = date_default_timezone_set('Asia/Kolkata');
             $date1 = date("m-d-Y h:i A");
 
-            $sql = "UPDATE `user_blog` SET `status`='$new_status',`created_at`='$date1' WHERE `id` = $id";
+            $sql = "UPDATE `user_events` SET `status`='$new_status' WHERE `id` = $id";
             $post = $this->db->query($sql);
 
             if (!$post) {
@@ -388,15 +280,12 @@ class CandidatesModel extends Model
         }
     }
 
-
-
-
     // user delete
 
     public function delete_usweb($id)
     {
         // Prepare the SQL statement with a placeholder for the id
-        $sql = "DELETE FROM `user_blog` WHERE id = ?";
+        $sql = "DELETE FROM `user_events` WHERE id = ?";
 
         // Execute the prepared statement with the id parameter
         $post = $this->db->query($sql, [$id]);

@@ -157,6 +157,7 @@ class Candidates extends BaseController
             $user1 = $model->save_blog($data);
             $userd = $model->findBlogId($input['name']);
 
+          
            if($input['profile_img'] !== ''){
             $prof_img =  $this->store_prof_img($userd['id'], $input);
 
@@ -303,8 +304,10 @@ class Candidates extends BaseController
         // Get the uploaded file
         $file = $input['profile_img'];
 
+         
         // Check if the file is uploaded successfully
         if ($file->isValid() && !$file->hasMoved()) {
+           
             // Move the file to the uploads folder
             $newName = $file->getRandomName();
             $file->move('uploads/profile/', $newName);
@@ -324,42 +327,47 @@ class Candidates extends BaseController
                     unlink($existingFilePath);
                 }
             }
-
+           
             // Move the file to user's folder if needed
             $userFolder = FCPATH . 'uploads/profile/' . $user_id . '-img';
+
             if (!file_exists($userFolder)) {
                 mkdir($userFolder, 0777, true); // Create user's folder if it doesn't exist
             }
-
+           
             $newResumePath = $userFolder . '/' . $newName; // New path with folder
             rename('uploads/profile/' . $newName, $newResumePath); // Move to user's folder
             $res_p = '/uploads/profile/' . $user_id . '-img/' . $newName;
             // Update database with new file path
+           
             $data = [
                 'user_id' => $user_id,
                 'image_path' => $res_p // Save the file path relative to 'uploads/profile/'
                 // Add more information about the file as needed
             ];
-
+            // echo "<pre>";
+            // print_r(  $data);
+            // echo "</pre>";
+            // die();
             if ($existingProfile) {
                 $model->update1($data); // Update existing profile record
             } else {
                 $model->save($data); // Save new profile record
             }
-
+           
             // Prepare data for view
             $post = $model->findByUId($user_id); // Fetch updated data
             $baseUrl = base_url(); // Get base URL from CI configuration
             $baseUrl = rtrim($baseUrl, '/') . '/'; // Ensure base URL ends with '/'
 
             $imagePath = $post['image_path'];
-
+           
             if ($imagePath && file_exists($imagePath)) {
                 $data['image_path'] = $baseUrl . $imagePath; // Full URL to uploaded image
             } else {
                 $data['image_path'] = $baseUrl . 'images/user_img.png'; // Default image if not found
             }
-
+          
             return $data; // Return data for further processing or display
         } else {
             // Handle file upload error

@@ -155,6 +155,21 @@ class CandidatesModel extends Model
             return $user;
         }
     }
+    public function findBlogByName(string $name)
+    {
+        // echo "test";
+        // die();
+        $user = $this
+            ->asArray()
+            ->where(['name' => $name])
+            ->last();
+
+        if (!$user) {
+            return 0;
+        } else {
+            return $user;
+        }
+    }
 
     public function findUserByUserNumber(string $mobile_number)
     {

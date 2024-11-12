@@ -16,6 +16,7 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="home1" role="tabpanel">
+            <input type="text" name="user_id" id="user_id" class="form-control d-none" required>
                 <div class="pt-4 row">
                     <div class="col-6">
                         <div class="form-group">

@@ -234,6 +234,7 @@
             var jobview = data[0].ref;
 
             // Populate input fields
+      
             $('#view_name').val(userData.user.name);
             $('#view_phone').val(userData.phone_number);
 
@@ -389,6 +390,7 @@
 
             console.log(userData);
             // Populate form fields with userData
+            $('#user_id').val(userData.user.id);
             $('#author').val(userData.user.author);
             // $('#content').summernote('code', userData.user.content);
             $('#content').val( userData.user.content);

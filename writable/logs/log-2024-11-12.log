@@ -1526,3 +1526,534 @@ INFO - 2024-11-12 09:23:38 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-12 09:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-12 09:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-12 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 14:58:08 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('5', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 14:58:17 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('5', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 14:59:08 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('5', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:01:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('7', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:24 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:33 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:41 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:04:51 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:07:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('38', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:09:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 363.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 363)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(162): App\Controllers\Admin\Candidates\Candidates->store_prof_img('38', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 09:49:35 --> ErrorException: Undefined array key "name"
+in APPPATH\Models\CandidatesModel.php on line 314.
+ 1 APPPATH\Models\CandidatesModel.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Models\\CandidatesModel.php', 314)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 15:21:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2 in C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_bl...', 0)
+#1 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_bl...')
+#2 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_bl...')
+#3 C:\xampp\htdocs\vsc-admin\app\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_bl...')
+#4 C:\xampp\htdocs\vsc-admin\app\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', Array)
+#5 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+#6 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#7 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\vsc-admin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-11-12 15:21:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:21:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:21:30 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 15:22:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2 in C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_bl...', 0)
+#1 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_bl...')
+#2 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_bl...')
+#3 C:\xampp\htdocs\vsc-admin\app\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_bl...')
+#4 C:\xampp\htdocs\vsc-admin\app\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', Array)
+#5 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+#6 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#7 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\vsc-admin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-11-12 15:22:04 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:22:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:22:04 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 15:22:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2 in C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_bl...', 0)
+#1 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_bl...')
+#2 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_bl...')
+#3 C:\xampp\htdocs\vsc-admin\app\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_bl...')
+#4 C:\xampp\htdocs\vsc-admin\app\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', Array)
+#5 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+#6 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#7 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\vsc-admin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\vsc-admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-11-12 15:22:21 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:22:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+CRITICAL - 2024-11-12 15:22:21 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '` = 'auth',       `meta_title` = 'test',
+        `meta_des` = 'test',
+       ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 4 APPPATH\Models\CandidatesModel.php(332): CodeIgniter\Database\BaseConnection->query('UPDATE `user_blog` SET 
+        author` = \'auth\',       `meta_title` = \'test\',
+        `meta_des` = \'test\',
+        `name`=\'test blog1111\',`meta_tag`=\'test\',`content`=\'test\' WHERE id = 32')
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(148): App\Models\CandidatesModel->update_blog('32', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 09:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:33:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 354.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 354)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:38:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 354.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 354)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:39:27 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 354.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 354)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:39:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 354.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 354)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:42:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 359.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(359): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 359)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 15:42:11 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 359.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(359): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 359)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(157): App\Controllers\Admin\Candidates\Candidates->store_prof_img('32', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 10:17:49 --> ErrorException: Undefined array key "name"
+in APPPATH\Models\CandidatesModel.php on line 270.
+ 1 APPPATH\Models\CandidatesModel.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Models\\CandidatesModel.php', 270)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(150): App\Models\CandidatesModel->save_blog([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 10:18:17 --> ErrorException: Undefined array key "name"
+in APPPATH\Models\CandidatesModel.php on line 270.
+ 1 APPPATH\Models\CandidatesModel.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\vsc-admin\\app\\Models\\CandidatesModel.php', 270)
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(150): App\Models\CandidatesModel->save_blog([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\vsc-admin\\public\\index.php')
+INFO - 2024-11-12 10:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

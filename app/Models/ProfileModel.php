@@ -66,7 +66,7 @@ class ProfileModel extends Model
 
         $user = $this
             ->asArray()
-            ->where(['id' => $id])
+            ->where(['user_id' => $id])
             ->first();
 
         if (!$user) {

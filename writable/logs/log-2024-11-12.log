@@ -1,0 +1,1053 @@
+INFO - 2024-11-12 04:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 04:58:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'test', 3306, '', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Auth.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Auth->attemptLogin()
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Auth.php(27): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Auth->attemptLogin()
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-12 04:58:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Admin\Auth.php(27): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Auth->attemptLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:03:59 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-12 06:14:43 --> Error: Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 218.
+ 1 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-11-12 06:14:43 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Debug\Exceptions.php(157): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\odinadmin\spark(88): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-12 05:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:16:54 --> mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `hotelie...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hotelie...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hotelie...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `hotelie...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(84): App\Models\CandidatesModel->getrefData('170')
+#6 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe4732...')
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-12 05:16:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 APPPATH\Models\CandidatesModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Candidates\Candidates.php(84): App\Models\CandidatesModel->getrefData('170')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:16:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = \'226\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = \'226\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = :user_id:', [...], false)
+ 4 APPPATH\Models\CandidatesModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(84): App\Models\CandidatesModel->getrefData('170')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:16:54 --> [Caused by] mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = \'226\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = \'226\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = \'226\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `hoteliers`.`user_id`, `hoteliers`.`role`, `hoteliers`.`name`, `hoteliers`.`created_at`
+FROM `hoteliers`
+WHERE `user_id` = :user_id:', [...], false)
+ 5 APPPATH\Models\CandidatesModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\Candidates\Candidates.php(84): App\Models\CandidatesModel->getrefData('170')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:17:22 --> mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+#6 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe4732...')
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-12 05:17:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 2 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:17:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 4 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:17:22 --> [Caused by] mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 5 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:21:55 --> mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+#6 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe4732...')
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-12 05:21:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 2 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:21:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 4 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:21:55 --> [Caused by] mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 5 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:24:43 --> mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+#6 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe4732...')
+#7 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-12 05:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 2 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:24:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 4 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:24:43 --> [Caused by] mysqli_sql_exception: Table 'adminodin.hoteliers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as user_count
+FROM `hoteliers`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as user_count
+FROM `hoteliers`', [], false)
+ 5 APPPATH\Models\CandidatesModel.php(394): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\Dashboard.php(24): App\Models\CandidatesModel->HotelCount()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:27:18 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:27:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:18 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:27:19 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:27:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:19 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:27:20 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:27:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:27:20 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 05:28:00 --> ErrorException: Undefined variable $total_hotel
+in APPPATH\Views\admin\dashboard\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_hotel', 'C:\\xampp\\htdocs\\odinadmin\\app\\Views\\admin\\dashboard\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\odinadmin\\app\\Views\\admin\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dashboard/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(28): view('admin/dashboard/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Dashboard->index('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:30:13 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(240): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:30:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(240): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:30:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(240): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:30:13 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(240): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:30:49 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:30:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:30:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:30:49 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 05:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 05:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 05:32:10 --> mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist in C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\odinadmin\app\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\odinadmin\app\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+#8 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+#9 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+#10 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\odinadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\odinadmin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-12 05:32:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:32:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+CRITICAL - 2024-11-12 05:32:10 --> [Caused by] mysqli_sql_exception: Table 'adminodin.user_blog' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_blog`
+WHERE `id` = \'129\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_blog`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CandidatesModel.php(541): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin\Candidates\Candidates.php(176): App\Models\CandidatesModel->findUserById('129')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('129')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 11:33:40 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+in APPPATH\Models\CandidatesModel.php on line 263.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(160): App\Models\CandidatesModel->save_blog([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 11:34:00 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+in APPPATH\Models\CandidatesModel.php on line 263.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(160): App\Models\CandidatesModel->save_blog([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 11:37:28 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::row_array()
+in APPPATH\Models\CandidatesModel.php on line 265.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(160): App\Models\CandidatesModel->save_blog([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 11:40:15 --> ErrorException: Undefined array key "user_id"
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 166.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\xampp\\htdocs\\odinadmin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:18:57 --> ErrorException: Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 64.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'C:\\xampp\\htdocs\\odinadmin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:19:05 --> ErrorException: Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 64.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'C:\\xampp\\htdocs\\odinadmin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:20:01 --> ErrorException: Undefined property: stdClass::$user_id
+in APPPATH\Views\admin\candidates\list_candidates.php on line 98.
+ 1 APPPATH\Views\admin\candidates\list_candidates.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'C:\\xampp\\htdocs\\odinadmin\\app\\Views\\admin\\candidates\\list_candidates.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\odinadmin\\app\\Views\\admin\\candidates\\list_candidates.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/candidates/list_candidates', [], true)
+ 5 APPPATH\Controllers\Admin\Candidates\Candidates.php(98): view('admin/candidates/list_candidates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listAllCandidates('f773a2b50fe473212825e51d512bbd63')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:21:58 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Models\CandidatesModel.php(340): CodeIgniter\Model->__call('findUserById', [...])
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(117): App\Models\CandidatesModel->update_status_d('1')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_status('1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:22:18 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Models\CandidatesModel.php(340): CodeIgniter\Model->__call('findUserById', [...])
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(117): App\Models\CandidatesModel->update_status_d('1')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_status('1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:22:29 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Models\CandidatesModel.php(340): CodeIgniter\Model->__call('findUserById', [...])
+ 2 APPPATH\Controllers\Admin\Candidates\Candidates.php(117): App\Models\CandidatesModel->update_status_d('1')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_status('1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:23:18 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(182): CodeIgniter\Model->__call('findUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:37:05 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(182): CodeIgniter\Model->__call('findUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_getByid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 06:46:22 --> BadMethodCallException: Call to undefined method App\Models\CandidatesModel::findUserById
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(221): CodeIgniter\Model->__call('findUserById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 06:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 06:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 07:08:06 --> ErrorException: Undefined array key "mobile_number"
+in APPPATH\Controllers\Admin\Candidates\Candidates.php on line 225.
+ 1 APPPATH\Controllers\Admin\Candidates\Candidates.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mobile_number"', 'C:\\xampp\\htdocs\\odinadmin\\app\\Controllers\\Admin\\Candidates\\Candidates.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\Candidates\Candidates->listCandidate_app_getByid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Candidates\Candidates))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\odinadmin\\public\\index.php')
+INFO - 2024-11-12 07:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

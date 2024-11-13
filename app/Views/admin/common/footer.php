@@ -20,7 +20,9 @@
 	<!-- Svganimation scripts -->
 	<script src="<?= base_url('vendor/svganimation/vivus.min.js') ?>"></script>
     <script src="<?= base_url('vendor/svganimation/svg.animation.js') ?>"></script>
-    
+    	
+	<!-- ck-editor -->
+
 	 <!-- Datatable -->
 	 <script src="<?= base_url('vendor/datatables/js/jquery.dataTables.min.js') ?>"></script>
     <script src="<?= base_url('js/plugins-init/datatables.init.js') ?>"></script>

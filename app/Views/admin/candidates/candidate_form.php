@@ -58,7 +58,8 @@
                    
                         <div class="form-group">
                             <label for="content">Content</label><br>
-                            <textarea id="content" name="content" rows="4" cols="50" style="width:100%;"></textarea>
+                            <div id="ckeditor" name="content"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -75,57 +76,52 @@
         </div>
     </div>
 </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 <script>
     $(document).ready(function() {
-        // Initialize Summernote
-        $('#content').summernote({
-            placeholder: 'Enter content here...',
-            tabsize: 2,
-            height: 200
-        });
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    CKEDITOR.replace('content'); // Ensure the ID matches your content div or textarea ID
+});
+$('#form_sub').click(function(e) {
+    e.preventDefault();
 
-<script>
-    $('#form_sub').click(function(e) {
-        e.preventDefault(); // Prevent the default button action
+    var form = $('#add-admin-form');
+    var url = 'view/save';
 
-        var form = $('#add-admin-form');
-        var url = 'view/save'; // Your endpoint to handle the form submission
+    // Update CKEditor content
+  
 
-        // Log form data before sending
-        var formData = new FormData(form[0]);
-        for (var pair of formData.entries()) {
-            console.log(pair[0] + ': ' + pair[1]);
+    var formData = new FormData(form[0]);
+    var content = $('.ck-content').html(); // Get CKEditor content
+    formData.append('content', content);
+
+    console.log('CKEditor Content:', content); // Log CKEditor content to verify
+    console.log('Form Data:', formData); // Log entire formData
+
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        beforeSend: function() {
+            form.find('button[type="submit"]').prop('disabled', true).text('Saving...');
+        },
+        success: function(response) {
+            console.log('Response:', response);
+            alert('Candidate data saved successfully!');
+            location.reload();
+        },
+        error: function(xhr, status, error) {
+            console.error('Error:', error);
+            alert('Error saving candidate data. Please try again.');
+        },
+        complete: function() {
+            form.find('button[type="submit"]').prop('disabled', false).text('Add Admin');
         }
-        console.log(formData);
-
-        $.ajax({
-            type: 'POST',
-            url: url,
-            data: formData, // Use FormData to handle multipart/form-data
-            contentType: false,
-            cache: false,
-            processData: false,
-            beforeSend: function() {
-                form.find('button[type="submit"]').prop('disabled', true).text('Saving...');
-            },
-            success: function(response) {
-                // Handle success response
-                console.log('Response:', response);
-                alert('Candidate data saved successfully!');
-                location.reload();
-                // Optionally, you can handle any additional UI changes or redirects here
-            },
-            error: function(xhr, status, error) {
-                // Handle error
-                console.error('Error:', error);
-                alert('Error saving candidate data. Please try again.');
-            },
-            complete: function() {
-                form.find('button[type="submit"]').prop('disabled', false).text('Add Admin'); // Reset button state
-            }
-        });
     });
+});
+
 </script>

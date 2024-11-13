@@ -59,7 +59,7 @@
                    
                         <div class="form-group">
                             <label for="content">Content</label><br>
-                            <textarea id="content" name="content" rows="4" cols="50" style="width:100%;"></textarea>
+                            <div id="ckeditor" name="content"></div>
                         </div>
                     </div>
                 </div>
@@ -76,25 +76,23 @@
         </div>
     </div>
 </form>
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 <script>
-    $(document).ready(function() {
-        // Initialize Summernote
-        $('#content').summernote({
-            placeholder: 'Enter content here...',
-            tabsize: 2,
-            height: 200
-        });
-    });
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
 
 <script>
+     $(document).ready(function() {
+    CKEDITOR.replace('content'); // Ensure the ID matches your content div or textarea ID
+});
     $('#form_sub').click(function(e) {
         e.preventDefault(); // Prevent the default button action
 
         var form = $('#add-admin-form');
         var url = 'view/save'; // Your endpoint to handle the form submission
-
+        var content = $('.ck-content').html(); // Get CKEditor content
+        formData.append('content', content);
         // Log form data before sending
         var formData = new FormData(form[0]);
         for (var pair of formData.entries()) {

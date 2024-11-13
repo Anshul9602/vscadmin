@@ -122,8 +122,10 @@ class Candidates extends BaseController
     {
 
         $data = $this->request->getPost();
+
+        $content = $data['content'] ?? '';
         $rofile_pic = $this->request->getFile('profile_pic');
-        $resume = $this->request->getFile('resume');
+    
         $input = [
             'user_id' => isset($data['user_id']) ? $data['user_id'] : '',
             'name' => isset($data['first_name']) ? $data['first_name'] : '',
@@ -133,15 +135,15 @@ class Candidates extends BaseController
             'meta_des' => isset($data['meta_des']) ? $data['meta_des'] : '',
             'date' => isset($data['date']) ? $data['date'] : '',
             'meta_tag' => isset($data['meta_tag']) ? $data['meta_tag'] : '',
-            'content' => isset($data['content']) ? $data['content'] : '',
+            'content' => $content,
 
             'profile_img' => isset($rofile_pic) ? $rofile_pic : ''
 
         ];
 
 
-        // echo "<pre>"; print_r($input); echo "</pre>";
-        // die();
+
+
 
         $model = new CandidatesModel();
         if ($input['user_id'] !== '') {

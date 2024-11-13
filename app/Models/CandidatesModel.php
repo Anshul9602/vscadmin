@@ -336,7 +336,7 @@ class CandidatesModel extends Model
     public function update_status_e($id)
     {
         //    echo json_encode($sql);
-        $id = $id;
+       
 
         $date = new DateTime();
         $date = date_default_timezone_set('Asia/Kolkata');

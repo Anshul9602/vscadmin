@@ -233,7 +233,7 @@ if (count($words) > 20) {
         </div>
     </div>
 </div>
-
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 <script>
     $('.open-view-form').click(function() {
 
@@ -400,12 +400,13 @@ if (count($words) > 20) {
 
             var userData = data[0];
 
-            console.log(userData);
+            // console.log(userData);
             // Populate form fields with userData
             $('#user_id').val(userData.user.id);
+            $('#testuser').html(userData.user.id);
             $('#author').val(userData.user.author);
             // $('#content').summernote('code', userData.user.content);
-            $('#ckeditor').val( userData.user.content);
+        
             $('#first_name').val(userData.user.name);
             $('#meta_des').val(userData.user.meta_des);
             $('#meta_tag').val(userData.user.meta_tag);
@@ -423,6 +424,7 @@ if (count($words) > 20) {
             $('#formTitle').text('Edit User Data');
             $('#addCandidateForm').addClass('show');
             $('.overlay').addClass('show');
+            fun1();
         });
     });
 

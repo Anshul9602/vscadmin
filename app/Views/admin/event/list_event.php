@@ -89,6 +89,17 @@
 
                                 if ($users !== null && !empty($users)): ?>
                                     <?php foreach ($users as $index => $user): ?>
+                                        <?php
+// Split the content into an array of words
+$words = explode(' ', strip_tags($user->content));
+
+// Display only the first 100 words
+if (count($words) > 20) {
+    $content = implode(' ', array_slice($words, 0, 20)) . '...';
+} else {
+    $content = implode(' ', $words);
+}
+?>
                                         <tr>
                                             <td>
                                                 <?= $index + 1 ?>
@@ -97,9 +108,9 @@
                                             <img src="<?= $user->image_url ?>" class="rounded-lg me-1" width="44"
                                             alt="">
                                             </td>
-                                            <td>
+                                            <td style="width:20%;">
 
-                                                <div class="d-flex align-items-center open-view-form" style="cursor: pointer;" data-id="<?= $user->id ?>">
+                                                <div class="d-flex align-items-center " style="cursor: pointer;" data-id="<?= $user->id ?>">
                                                    
                                                     <span class="w-space-no">
                                                         <?= $user->name ?>
@@ -108,10 +119,10 @@
                                                 </div>
 
                                             </td>
-                                            <td>
+                                            <td style="width:20%;">
                                                 <span>
                                                     <i class="fa fa-mobile color-muted"></i>
-                                                    <?= $user->content ?>
+                                                    <?= $content ?>
                                                   
                                                    
                                                 </span>

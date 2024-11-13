@@ -77,28 +77,34 @@
     </div>
 </form>
 <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
-<script>
 
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
 
 <script>
-     $(document).ready(function() {
-    CKEDITOR.replace('content'); // Ensure the ID matches your content div or textarea ID
-});
+$(document).ready(function() {
+    // Initialize CKEditor for the content field
+    CKEDITOR.replace('ckeditor'); // Ensure the ID matches the editor's ID
+
+    // Handle form submission
     $('#form_sub').click(function(e) {
-        e.preventDefault(); // Prevent the default button action
+        e.preventDefault(); // Prevent default button action
 
         var form = $('#add-admin-form');
-        var url = 'view/save'; // Your endpoint to handle the form submission
-        var content = $('.ck-content').html(); // Get CKEditor content
-        formData.append('content', content);
-        // Log form data before sending
+        var url = 'view/save'; // Your endpoint to handle form submission
+
+        // Create a FormData object to handle the form data
         var formData = new FormData(form[0]);
+
+        // Get the content from CKEditor and add it to FormData
+        var content = $('.ck-content').html();
+
+        
+        formData.append('content', content);
+
+        // Check form data in console
         for (var pair of formData.entries()) {
             console.log(pair[0] + ': ' + pair[1]);
         }
-        console.log(formData);
 
         $.ajax({
             type: 'POST',
@@ -115,7 +121,6 @@
                 console.log('Response:', response);
                 alert('Candidate data saved successfully!');
                 location.reload();
-                // Optionally, you can handle any additional UI changes or redirects here
             },
             error: function(xhr, status, error) {
                 // Handle error
@@ -127,4 +132,10 @@
             }
         });
     });
+});
 </script>
+
+
+
+
+

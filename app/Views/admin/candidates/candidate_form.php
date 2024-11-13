@@ -1,6 +1,3 @@
-
-
-
 <form id="add-admin-form" method="post" enctype="multipart/form-data" style="height:90vh;    overflow: scroll;">
     <h4 class="form-heading">Add New Blog</h4>
     <div class="custom-tab-1">
@@ -16,7 +13,8 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="home1" role="tabpanel">
-            <input type="text" name="user_id" id="user_id" class="form-control d-none" required>
+                <input type="text" name="user_id" id="user_id" class="form-control d-none" required>
+                <p class="d-none" id="testuser"></p>
                 <div class="pt-4 row">
                     <div class="col-6">
                         <div class="form-group">
@@ -54,12 +52,12 @@
                             <input type="text" name="meta_tag" id="meta_tag" class="form-control">
                         </div>
                     </div>
-                    <div class="col-12">
-                   
+                    <div class="col-12" id="contentt">
+
                         <div class="form-group">
                             <label for="content">Content</label><br>
                             <div id="ckeditor" name="content"></div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -78,50 +76,50 @@
 </form>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
-<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
 <script>
-    $(document).ready(function() {
-    CKEDITOR.replace('content'); // Ensure the ID matches your content div or textarea ID
-});
-$('#form_sub').click(function(e) {
-    e.preventDefault();
+   
 
-    var form = $('#add-admin-form');
-    var url = 'view/save';
 
-    // Update CKEditor content
-  
 
-    var formData = new FormData(form[0]);
-    var content = $('.ck-content').html(); // Get CKEditor content
-    formData.append('content', content);
+    $('#form_sub').click(function(e) {
+        e.preventDefault();
 
-    console.log('CKEditor Content:', content); // Log CKEditor content to verify
-    console.log('Form Data:', formData); // Log entire formData
+        var form = $('#add-admin-form');
+        var url = 'view/save';
 
-    $.ajax({
-        type: 'POST',
-        url: url,
-        data: formData,
-        contentType: false,
-        cache: false,
-        processData: false,
-        beforeSend: function() {
-            form.find('button[type="submit"]').prop('disabled', true).text('Saving...');
-        },
-        success: function(response) {
-            console.log('Response:', response);
-            alert('Candidate data saved successfully!');
-            location.reload();
-        },
-        error: function(xhr, status, error) {
-            console.error('Error:', error);
-            alert('Error saving candidate data. Please try again.');
-        },
-        complete: function() {
-            form.find('button[type="submit"]').prop('disabled', false).text('Add Admin');
-        }
+        // Update CKEditor content
+
+
+        var formData = new FormData(form[0]);
+        var content = $('.ck-content').html(); // Get CKEditor content
+        formData.append('content', content);
+
+        console.log('CKEditor Content:', content); // Log CKEditor content to verify
+        console.log('Form Data:', formData); // Log entire formData
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: formData,
+            contentType: false,
+            cache: false,
+            processData: false,
+            beforeSend: function() {
+                form.find('button[type="submit"]').prop('disabled', true).text('Saving...');
+            },
+            success: function(response) {
+                console.log('Response:', response);
+                alert('Candidate data saved successfully!');
+                location.reload();
+            },
+            error: function(xhr, status, error) {
+                console.error('Error:', error);
+                alert('Error saving candidate data. Please try again.');
+            },
+            complete: function() {
+                form.find('button[type="submit"]').prop('disabled', false).text('Add Admin');
+            }
+        });
     });
-});
-
 </script>
